@@ -19,7 +19,7 @@
 '''
 
 # Initial Code
-def is_right_parenthesis(brackets):
+def is_right_parentheses(brackets):
     if len(brackets) % 2 != 0:
         return False
     elif brackets[0] == ')':
@@ -44,20 +44,20 @@ def is_right_parenthesis(brackets):
         return False
 
 
-print(is_right_parenthesis('()()()'))
-print(is_right_parenthesis('((()))'))
-print(is_right_parenthesis('(())()'))
-print(is_right_parenthesis('(('))
-print(is_right_parenthesis('))(('))
-print(is_right_parenthesis(')('))
-print(is_right_parenthesis('())('))
+print(is_right_parentheses('()()()'))
+print(is_right_parentheses('((()))'))
+print(is_right_parentheses('(())()'))
+print(is_right_parentheses('(('))
+print(is_right_parentheses('))(('))
+print(is_right_parentheses(')('))
+print(is_right_parentheses('())('))
 
 # REVIEW
 # 1. 알고리즘을 풀 때 제일 곤란하게 하는 게 임계값 같은 것에 대한 풀이에요. 문제를 제대로 이해해야 한다는 게 이런거에요. 분명 입력에서는 길이가 0 이상이라고 했거든요. 그러면 4번째 검증식에서 인덱스 에러가 나겠죠. 기억해주세요. 문제의 설명, 제시된 입력. 출력의 크기와 조건 등은 확실하게 파악해주세요.
 # 2. 20~23번째 줄은 다음과 같이 한 줄로 할 수도 있죠: return not stack 무조건 이게 더 좋은 방법이니 다음엔 저런 반환을 회피해주세요!
 
 # Modified Code
-def is_right_parenthesis_modified(brackets):
+def is_right_parentheses_modified(brackets):
     if len(brackets) == 0:
         return True
     elif len(brackets) % 2 != 0:
@@ -81,11 +81,11 @@ def is_right_parenthesis_modified(brackets):
     return not stack
 
 
-print(is_right_parenthesis_modified('()()()'))
-print(is_right_parenthesis_modified('((()))'))
-print(is_right_parenthesis_modified('(())()'))
-print(is_right_parenthesis_modified('(('))
-print(is_right_parenthesis_modified('))(('))
-print(is_right_parenthesis_modified(')('))
-print(is_right_parenthesis_modified('())('))
-print(is_right_parenthesis_modified(''))
+print(is_right_parentheses_modified('()()()'))
+print(is_right_parentheses_modified('((()))'))
+print(is_right_parentheses_modified('(())()'))
+print(is_right_parentheses_modified('(('))
+print(is_right_parentheses_modified('))(('))
+print(is_right_parentheses_modified(')('))
+print(is_right_parentheses_modified('())('))
+print(is_right_parentheses_modified(''))
