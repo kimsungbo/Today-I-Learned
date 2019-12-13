@@ -7,3 +7,4 @@ funda_train.csv filter=lfs diff=lfs merge=lfs -text
 *.whl filter=lfs diff=lfs merge=lfs -text
 trip_chain_dropped.jpg filter=lfs diff=lfs merge=lfs -text
 trip_chain_dropped.csv filter=lfs diff=lfs merge=lfs -text
+df_usage_hacha5.csv filter=lfs diff=lfs merge=lfs -text
